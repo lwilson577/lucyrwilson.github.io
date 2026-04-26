@@ -192,3 +192,15 @@ p {
     color: #1a1a1a;
   }
 }
+
+/*animations*/
+
+.btn,
+.nav-links a {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+  will-change: transform;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
