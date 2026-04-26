@@ -223,7 +223,17 @@ p {
 
 /* new timeline */
 
+#education {
+  max-width: 1000px; /* wider than normal sections */
+}
+
+#education .timeline-horizontal {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
 .timeline-horizontal {
+ flex-wrap: nowrap; /* force horizontal layout */
   position: relative;
   margin-top: 40px;
 
@@ -250,6 +260,8 @@ p {
   z-index: 1;
 
   width: 30%;
+  flex: 1;
+  min-width: 220px;
 
   background: #f9f5ec;
   padding: 20px;
