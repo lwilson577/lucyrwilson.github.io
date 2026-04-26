@@ -212,7 +212,7 @@ p {
   }
 
   .nav-links a:hover {
-    color: #4da3ff;
+    color: #a07456;
   }
 
   .secondary {
@@ -235,12 +235,12 @@ p {
 
 .primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 18px rgba(77, 163, 255, 0.25);
+  box-shadow: 0 8px 18px rgba(165, 130, 107, 0.25);
 }
 
 .secondary:hover {
   transform: translateY(-2px);
-  border-color: #4da3ff;
+  border-color: #92734f;
 }
 
 .nav-links a:hover {
