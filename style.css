@@ -114,17 +114,6 @@ p {
   letter-spacing: -1px;
 }
 
-.subtitle {
-  font-size: 18px;
-  color: #cfcfcf;
-  margin-bottom: 12px;
-}
-
-.description {
-  color: #9aa0a6;
-  margin-bottom: 24px;
-}
-
 /* BUTTONS */
 .hero-buttons {
   margin-top: 20px;
