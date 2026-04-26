@@ -104,6 +104,10 @@ p {
   margin-bottom: 24px;
 }
 
+.hero-card:not(:last-child) {
+  border-bottom: 1px dashed #e6e6e6;
+}
+
 .card {
   background: #f6f1e8;
   border-radius: 14px;
