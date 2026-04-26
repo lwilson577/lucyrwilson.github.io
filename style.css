@@ -65,15 +65,43 @@ p {
 
 /* HERO */
 .hero {
-  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px 40px;
+  padding: 90px 40px;
+}
+
+.hero-card {
+  max-width: 700px;
+  width: 100%;
+
+  background: #f6f1e8; /* soft warm beige */
+  border-radius: 16px;
+
+  padding: 60px 40px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .hero-content {
   max-width: 800px;
+}
+
+.hero-card h1 {
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #5a5a5a;
+}
+
+.description {
+  color: #666;
 }
 
 .hero h1 {
@@ -95,8 +123,7 @@ p {
 
 /* BUTTONS */
 .hero-buttons {
-  display: flex;
-  gap: 12px;
+  margin-top: 20px;
 }
 
 .btn {
