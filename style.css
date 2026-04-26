@@ -204,3 +204,22 @@ p {
 .btn:hover {
   transform: translateY(-2px);
 }
+
+.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(77, 163, 255, 0.25);
+}
+
+.secondary:hover {
+  transform: translateY(-2px);
+  border-color: #4da3ff;
+}
+
+.nav-links a:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active,
+.nav-links a:active {
+  transform: translateY(0px);
+}
