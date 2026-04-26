@@ -1,5 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 100px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background-color: #0f1115;
+  color: #e6e6e6;
+  line-height: 1.6;
+}
+
+/* NAV */
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(15, 17, 21, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 16px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* HERO */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #cfcfcf;
+  margin-bottom: 12px;
+}
+
+.description {
+  color: #9aa0a6;
+  margin-bottom: 24px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.primary {
+  background: #4da3ff;
+  color: #000;
+}
+
+.primary:hover {
+  background: #6bb4ff;
+}
+
+.secondary {
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.secondary:hover {
+  border-color: #555;
+}
+
+/* SECTIONS PLACEHOLDERS */
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 24px;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
 }
