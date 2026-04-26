@@ -68,7 +68,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 90px 40px;
+  padding: 40px 40px;
 }
 
 .hero-card {
@@ -225,6 +225,7 @@ p {
 
 #education {
   max-width: 1000px; /* wider than normal sections */
+  margin-top: 10px; /* pull it up closer */
 }
 
 #education .timeline-horizontal {
