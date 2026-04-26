@@ -30,7 +30,7 @@
 <section class="hero">
   <div class="hero-card">
 
-    <h1>Hi, I'm Lucy Wilson</h1>
+    <h1><span id="typing-text"></span></h1>
     <p class="subtitle">BSc Computer Science Student at Queen's University Belfast</p>
     <p class="description">IT Support Analyst</p>
 
@@ -66,6 +66,24 @@
 
   </div>
 </section>
+
+<script>
+  const text = "Hi, I'm Lucy Wilson";
+  const speed = 60; // typing speed (lower = faster)
+
+  let i = 0;
+  const target = document.getElementById("typing-text");
+
+  function typeWriter() {
+    if (i < text.length) {
+      target.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  window.onload = typeWriter;
+</script>
 
 </body>
 </html>
