@@ -126,3 +126,32 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   overflow: hidden;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #e9e2d6;
+    color: #1a1a1a;
+  }
+
+  .page {
+    background: #ffffff;
+  }
+
+  .nav {
+    background: #ffffff;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-links a {
+    color: #333;
+  }
+
+  .nav-links a:hover {
+    color: #4da3ff;
+  }
+
+  .secondary {
+    border: 1px solid #333;
+    color: #1a1a1a;
+  }
+}
