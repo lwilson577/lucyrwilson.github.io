@@ -96,13 +96,17 @@ p {
   margin-bottom: 12px;
 }
 
-.subtitle {
+.hero-card .subtitle {
+  font-size: 18px;
   color: #5a5a5a;
+  margin-bottom: 12px;
 }
 
-.description {
+.hero-card .description {
   color: #666;
+  margin-bottom: 24px;
 }
+
 
 .hero h1 {
   font-size: 48px;
