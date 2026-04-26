@@ -221,6 +221,85 @@ p {
   transform: scale(1.2);
 }
 
+/* new timeline */
+
+.timeline-horizontal {
+  position: relative;
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* the line */
+.timeline-line {
+  position: absolute;
+  top: 20px;
+  left: 5%;
+  right: 5%;
+  height: 2px;
+  background: rgba(0,0,0,0.1);
+  z-index: 0;
+}
+
+/* each card */
+.timeline-card {
+  position: relative;
+  z-index: 1;
+
+  width: 30%;
+
+  background: #f9f5ec;
+  padding: 20px;
+  border-radius: 12px;
+
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+
+  text-align: center;
+
+  transition: transform 0.2s ease;
+}
+
+/* hover lift */
+.timeline-card:hover {
+  transform: translateY(-4px);
+}
+
+/* little connector dot */
+.timeline-card::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 12px;
+  height: 12px;
+
+  background: #b48c72;
+  border-radius: 3px;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.timeline-card h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.timeline-card p {
+  font-size: 13px;
+  color: #666;
+}
+
+.timeline-card span {
+  font-size: 12px;
+  color: #999;
+}
+
 /* BUTTONS */
 .hero-buttons {
   margin-top: 20px;
@@ -381,4 +460,23 @@ p {
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .timeline-horizontal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-line {
+    display: none;
+  }
+
+  .timeline-card {
+    width: 100%;
+  }
+
+  .timeline-card::before {
+    display: none;
+  }
 }
