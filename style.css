@@ -78,7 +78,7 @@ p {
   background: #bdb6a9; /* soft warm beige */
   border-radius: 16px;
 
-  padding: 60px 40px;
+  padding: 70px 40px 40px;
 
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.08),
@@ -147,8 +147,8 @@ p {
 /* SECTIONS PLACEHOLDERS */
 .section {
   max-width: 800px;
-  margin: auto;
-  padding: 80px 24px;
+  margin: 40px auto; /* was 80px padding spacing */
+  padding: 40px 24px;
 }
 
 .section:not(:last-child) {
@@ -171,6 +171,7 @@ p {
 
   position: relative;
   overflow: hidden;
+  animation: pageFloat 1.2s ease;
 }
 
 /* subtle paper texture effect */
@@ -242,4 +243,15 @@ p {
 .btn:active,
 .nav-links a:active {
   transform: translateY(0px);
+}
+
+@keyframes pageFloat {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
