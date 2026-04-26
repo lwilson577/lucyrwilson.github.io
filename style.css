@@ -125,6 +125,20 @@ p {
   letter-spacing: -1px;
 }
 
+.skills {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  font-size: 12px;
+  padding: 6px 10px;
+  background: rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+
 /* BUTTONS */
 .hero-buttons {
   margin-top: 20px;
