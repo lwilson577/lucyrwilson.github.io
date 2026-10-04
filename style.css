@@ -114,8 +114,37 @@ a { color: inherit; }
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
 }
-.card p { color: var(--muted); margin: 0; }
+
+.card p { margin: 0 0 1rem; }
+
+.card-lead {
+  color: var(--ink) !important;
+  font-weight: 500;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1.5rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.card-list li {
+  position: relative;
+  padding-left: 1.4rem;
+  color: var(--muted);
+}
+
+.card-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--ink);
+}
 
 /* ---------- Contact form ---------- */
 
