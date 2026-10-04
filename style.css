@@ -272,6 +272,33 @@ a { color: inherit; }
 .contact-form[hidden],
 .form-thanks[hidden] { display: none; }
 
+/* ---------- Scroll reveal ---------- */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Cards float in one after another */
+.js .cards .reveal:nth-child(2),
+.js .about-points .reveal:nth-child(2) { transition-delay: 0.12s; }
+.js .cards .reveal:nth-child(3),
+.js .about-points .reveal:nth-child(3) { transition-delay: 0.24s; }
+
+/* Respect people who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /* ---------- Footer ---------- */
 .footer {
   max-width: var(--max);
