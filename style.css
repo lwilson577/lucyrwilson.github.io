@@ -147,11 +147,12 @@ a { color: inherit; }
 }
 
 /* ---------- About ---------- */
-.about {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 4rem;
-  align-items: center;
+.about { display: block; }
+
+.about-window { background: var(--paper); }
+
+.about-window .about-text {
+  padding: 3rem clamp(1.5rem, 5vw, 4rem) 3.5rem;
 }
 
 .browser-frame {
