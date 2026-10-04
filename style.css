@@ -147,21 +147,7 @@ a { color: inherit; }
 }
 
 /* ---------- About ---------- */
-  .about {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
-    .about-window {
-    border-radius: 12px;
-    box-shadow: 6px 6px 0 var(--ink);
-    margin-right: 6px; /* keeps the shadow on screen */
-  }
-
-  .about-window .about-text {
-    padding: 1.75rem 1.25rem 2rem;
-  }
-
+.about { display: block; }
 
 .browser-frame {
   border: 2px solid var(--ink);
@@ -186,11 +172,8 @@ a { color: inherit; }
   background: var(--ink);
 }
 
-.browser-frame img {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  filter: grayscale(100%);              /* keeps it black and white */
+.about-window .about-text {
+  padding: 3rem clamp(1.5rem, 5vw, 4rem) 3.5rem;
 }
 
 .eyebrow {
@@ -202,18 +185,21 @@ a { color: inherit; }
   margin: 0 0 0.75rem;
 }
 
-  .about-statement {
-    font-size: 1.9rem;
-    line-height: 1.15;
-  }
+.about-statement {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
+}
 
 .about-text > p { color: var(--muted); max-width: 36rem; }
 
-  .about-points {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-    margin-top: 1.5rem;
-  }
+.about-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
 
 .about-points h3 { font-size: 1.35rem; margin-bottom: 0.25rem; }
 .about-points p { margin: 0; color: var(--muted); font-size: 0.95rem; }
@@ -316,12 +302,32 @@ a { color: inherit; }
 }
 
 /* ---------- Small screens ---------- */
+/* ---------- Small screens ---------- */
 @media (max-width: 700px) {
   .nav-logo img { height: 52px; }
   .nav-links { gap: 1.1rem; font-size: 0.95rem; }
   .nav-links li:not(:last-child) { display: none; } /* keep just the CTA on phones */
   .hero, .section { padding: 3.5rem 1.25rem; }
   .contact { grid-template-columns: 1fr; gap: 1.5rem; }
+
+  /* About window on phones */
+  .about { padding-left: 0.75rem; padding-right: 0.75rem; }
+
+  .about-window {
+    border-radius: 12px;
+    box-shadow: 6px 6px 0 var(--ink);
+    margin-right: 6px; /* keeps the shadow on screen */
+  }
+
+  .about-window .about-text { padding: 1.75rem 1.25rem 2rem; }
+
+  .about-statement { font-size: 1.9rem; line-height: 1.15; }
+
+  .about-points {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
 }
 
 @media (min-width: 900px) {
