@@ -109,6 +109,12 @@
 
     <button type="submit" class="button">Send message</button>
     <p class="form-status" aria-live="polite"></p>
+
+    <div class="form-thanks" hidden>
+  <h3>Thanks!</h3>
+  <p>Your message has been sent. I'll get back to you soon.</p>
+</div>
+
   </form>
 </section>
 
@@ -133,9 +139,11 @@
         body: new FormData(form),
         headers: { Accept: "application/json" }
       });
-      if (res.ok) {
-        form.reset();
-        status.textContent = "Thanks! I'll get back to you soon.";
+        if (res.ok) {
+          form.reset();
+          status.textContent = "";
+          form.hidden = true;
+          document.querySelector(".form-thanks").hidden = false;
       } else {
         status.textContent = "Something went wrong. Please email me directly instead.";
       }

@@ -164,6 +164,19 @@ a { color: inherit; }
 .form-status { margin: 0; color: var(--muted); }
 .contact-alt { margin-top: 1.5rem; color: var(--muted); }
 
+.form-thanks {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--soft);
+  padding: 2.5rem 2rem;
+}
+
+.form-thanks h3 { font-size: 2.2rem; margin-bottom: 0.3rem; }
+.form-thanks p { margin: 0; color: var(--muted); }
+
+.contact-form[hidden],
+.form-thanks[hidden] { display: none; }
+
 /* ---------- Footer ---------- */
 .footer {
   max-width: var(--max);
