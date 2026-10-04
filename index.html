@@ -4,131 +4,92 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light">
-  <title>Lucy Wilson</title>
-
-  <link rel="stylesheet" href="style.css?v=3" />
-</head>
+  <title>LRW | Web Design & Development </title>
+  <!-- Icons -->
   <link rel="icon" href="images/favicon.ico" sizes="any">
   <link rel="icon" href="images/lrw-browser-favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Fonts (same as the logo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=4" />
+</head>
+
 <body>
 
-  <div class="page">
-
-    <!-- NAV -->
-<header class="nav">
-  <div class="nav-container">
+  <header>
+    <nav class="nav">
       <a href="/" class="nav-logo">
-    <img src="/lrw-browser-logo-full-black.svg" alt="Lucy R. Wilson Web Design & Development">
-  </a>
-
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+        <img src="images/lrw-browser-logo-full-black.svg" alt="Lucy R. Wilson – Web Design & Development">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Get in touch</a></li>
+      </ul>
     </nav>
+  </header>
 
-  </div>
-</header>
+  <main>
 
-    <!-- HERO -->
-<section class="hero">
-  <div class="hero-card">
+    <section class="hero">
+      <h1>Websites for small businesses, made simple.</h1>
+      <p>I design and build clean, mobile-friendly websites that you can update yourself.</p>
+      <a href="#contact" class="button">Start a project</a>
+    </section>
 
-    <h1><span id="typing-text"></span></h1>
-    <p class="subtitle">BSc Computer Science Student at Queen's University Belfast</p>
-    <p class="description">IT Support Analyst</p>
+    <section id="services" class="section">
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Landing page</h3>
+          <p>A single, focused page with a contact form. Ideal for events, launches and new businesses.</p>
+        </article>
+        <article class="card">
+          <h3>Small website</h3>
+          <p>3–5 pages, mobile-friendly, easy for you to update, with contact form and map.</p>
+        </article>
+        <article class="card">
+          <h3>Booking setup</h3>
+          <p>Online bookings added to your site using a trusted booking tool, set up in your name.</p>
+        </article>
+      </div>
+    </section>
 
-    <div class="hero-buttons">
-      <a href="#Contact" class="btn primary">Contact</a>
-    </div>
+    <section id="work" class="section">
+      <h2>Work</h2>
+      <div class="cards">
+        <!-- Add a card per portfolio project -->
+        <article class="card">
+          <h3>Project name</h3>
+          <p>What the problem was and what I built.</p>
+        </article>
+      </div>
+    </section>
 
-    <div class="skills">
-  <span>HTML</span>
-  <span>CSS</span>
-  <span>JavaScript</span>
-  <span>C++</span>
-  <span>Python</span>
-</div>
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>A short, friendly introduction: who you are, how you work, and why clients can trust you.</p>
+    </section>
 
-  </div>
-</section>
+    <section id="contact" class="section">
+      <h2>Get in touch</h2>
+      <p>Tell me a little about your business and what you need.</p>
+      <a href="mailto:contact@lucyrwilson.com" class="button">contact@lucyrwilson.com</a>
+    </section>
 
-<section id="education" class="section">
-<div class="timeline-horizontal">
+  </main>
 
-  <div class="timeline-line"></div>
+  <footer class="footer">
+    <p>© <span id="year"></span> Lucy R. Wilson</p>
+  </footer>
 
-  <div class="timeline-card">
-    <h3>BSc Computer Science</h3>
-    <p>Queen's University Belfast</p>
-    <span>2023 – Present</span>
-  </div>
-
-  <div class="timeline-card">
-    <h3>A Levels</h3>
-    <p>Glenlola Collegiate</p>
-    <p>Technology & Design, Digital Technology, Moving Image Arts</p>
-    <span>2021 – 2023</span>
-  </div>
-
-  <div class="timeline-card">
-    <h3>GCSEs</h3>
-    <p>Glenlola Collegiate</p>
-    <p>10 GCSEs including Digital Technology (A*)</p>
-    <span>2016 – 2021</span>
-  </div>
-
-</div>
-</section>
-
-    <!-- ABOUT -->
-<section id="about" class="section">
-  <div class="card">
-
-    <h2>About</h2>
-    <p>I'm a Computer Science student at Queen's University Belfast with a strong
-      interest in cyber security and web development
-    </p>
-    <br>
-    <p>Currently in my placement year working as an IT Support Analyst.</p>
-    <br>
-
-    <a href="#" class="btn primary">Learn More</a>
-
-  </div>
-</section>
-
-    <!-- PROJECTS -->
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <div class="card">
-
-    <h2>Projects</h2>
-    <p>Some things I've been working on.</p>
-    <br>
-
-    <a href="#" class="btn primary">View Projects</a>
-
-  </div>
-</section>
-
-<script>
-  const text = "Hi, I'm Lucy Wilson";
-  const speed = 70; // typing speed (lower = faster)
-
-  let i = 0;
-  const target = document.getElementById("typing-text");
-
-  function typeWriter() {
-    if (i < text.length) {
-      target.innerHTML += text.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
-    }
-  }
-
-  window.onload = typeWriter;
-</script>
-
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
+
